@@ -10,7 +10,7 @@
         <title>{{ config('app.name', 'Laravel') }}</title>
 
         <!-- Scripts -->
-        <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script type="text/javascript" src="js/jquery-3.3.1.min.js" defer></script>
         <script src="{{ asset('js/app.js') }}" defer></script>
         
         <!-- Fonts -->
@@ -18,12 +18,14 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
         <!-- Styles -->
+        <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
+        <link href="{{asset('font-awesome/css/font-awesome.css')}}" rel="stylesheet">
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
         <!-- DataTables -->
-        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.css"/>
+        <link rel="stylesheet" type="text/css" href="{{ asset('DataTables/datatables.min.css') }}"/>
 
-        <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.js"></script>
+        <script src="{{ asset('DataTables/datatables.min.js') }}" defer></script>
 
 
     </head>
